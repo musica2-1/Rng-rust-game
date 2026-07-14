@@ -1,5 +1,5 @@
-use std::cmp::Ordering;
-use std::io;
+use std::cmp::Ordering;   
+use std::io;   
 
 use rand::Rng;
 
@@ -14,7 +14,7 @@ fn main() {
         let mut guess = String::new();
 
         io::stdin()
-            .read_line(&mut guess)
+            .read_line(&mut guess)   //-Le apenas input string
             .expect("Failed to read line");
 
         let guess: u32 = match guess.trim().parse() {
